@@ -1,51 +1,102 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+*{
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #00698f;
 }
-
-nav {
-    background-color: #ADD8E6; 
-    padding: 10px;
-    text-align: center;
+nav{
+    font-family: 'sans-serif','ubantu';
 }
-
-nav h1 {
-    margin: 0;
-    color: #333;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+nav ul{
     display: flex;
-    justify-content: left;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color:white;
+    align-items: center;
+}
+nav ul li{
+    padding: 0 10px;
 }
 
-nav li {
-    margin-right: 20px;
+.barnd img{
+    width: 50px;
+    padding: 0 8px;
 }
-
-.nav-link {
-    text-decoration: none;
-    color: #333;
+.barnd {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
 }
-
-.nav-link:hover {
-    color: #00698f; /* darker blue color on hover */
-    text-decoration: underline;
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'sans-serif','ubantu';
+    display: block;
+    margin: 23px auto;
+    width:70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
+.button{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: white;
+    flex-direction: column;
 
-#floorplan-container {
-    width: 800px;
-    height: 600px;
-    border: 1px solid #ccc;
-    margin: 20px auto;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-#floorplan-canvas {
-    border: 1px solid #ccc;
+.icons{
+    margin-top: 10px;
+}
+.icons i {
+    cursor: pointer;
+}
+#progressbar {
+    width: 80vw;
+    cursor: pointer;
+}
+.songiteam{
+    display: flex;
+    height: 45px;
+    background-color: white;
+    width: 50%;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 34px;
+}
+.songiteam img{
+    width: 43px;
+    margin: 0 25px;
+    border-radius: 34px;
+}
+.timespan{
+    margin: 0 23px;
+}
+.timespan i{
+    cursor: pointer;
+}
+.songinfo{
+    position:absolute;
+    left: 10vw;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
 }

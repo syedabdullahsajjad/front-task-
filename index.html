@@ -1,23 +1,89 @@
+<!-- this project is for spotify clone the first official project of my life 
+i do not take revenge but i will make them regreat  
+khahani sunoo zubani sunoo mujy payyar hoowa tha ikrar hoowa tha -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2D Floorplan Viewer</title>
+    <title>spofity</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <nav>
-        <h1>2D Floorplan Viewer</h1>
         <ul>
-            <li><a href="#" class="nav-link">Home</a></li>
-            <li><a href="#" class="nav-link">About</a></li>
-            <li><a href="#" class="nav-link">Info</a></li>
+            <li class="barnd"> <img src="logo.png" alt="spotify"><span>spotify</span></li>
+            <li>Home</li>
+            <li>About</li>
         </ul>
     </nav>
-    <div id="floorplan-container">
-        <canvas id="floorplan-canvas" width="800" height="600"></canvas>
+    <div class="container">
+        
+        <div class="songlist">
+            <h1>Hit Mehandi songs 2024</h1>
+            <br>
+            <div>
+                <div class="songiteam">
+                    <img src="covers\1.jpg" alt="1">
+                    <span>mehandi ha sajny wali</span>
+                    <span class="songlist"><span class="timespan">05:34 <i class="fa-solid  song-play fa-play-circle"></i></span>
+                </span>
+                </div>
+                <br>
+                <div class="songiteam">
+                    <img src="covers\2.jpg" alt="1">
+                    <span>boly choriyia</span>
+                    <span class="songlist"><span class="timespan">05:34 <i class="fa-solid  song-play fa-play-circle"></i></span>
+                </span>
+                </div>
+                <br>
+                <div class="songiteam">
+                    <img src="covers\3.jpg" alt="1">
+                    <span>tujay daikha to yeh jana na saman</span>
+                    <span class="songlist"><span class="timespan">05:34 <i class="fa-solid  song-play fa-play-circle"></i></span>
+                </span>
+                </div>
+                <br>
+                <div class="songiteam">
+                    <img src="covers\4.jpg" alt="1">
+                    <span>hum ko kis k gham ny mara</span>
+                    <span class="songlist"><span class="timespan">05:34 <i class="fa-solid  song-play fa-play-circle"></i></span>
+                </span>
+                </div>
+                <br>
+                <div class="songiteam">
+                    <img src="covers\5.jpg" alt="1">
+                    <span>mujy tum nazar sy</span>
+                    <span class="songlist"><span class="timespan">05:34 <i class="fa-solid song-play fa-play-circle"></i></span>
+                </span>
+                </div>
+                <br>
+                <div class="songiteam">
+                    <img src="covers\6.jpg" alt="1">
+                    <span>khabi mein khabi tum</span>
+                    <span class="songlist"><span class="timespan">05:34 <i class="fa-solid  song-play fa-play-circle"></i></span>
+                </span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="songbanner"></div>
+    </div>
+    <div class="button">
+        <input type="range" class="range" name="range" id="progressbar" min="0" max="100">
+        <div class="icons">
+            <!-- fountawesom icons  -->
+            <i class="fa-solid fa-3x fa-step-backward"></i>
+            <i class="fa-solid fa-3x fa-play-circle" id="masterplay"></i>
+            <i class="fa-solid fa-3x fa-step-forward"></i>
+            
+        </div>
+        <div class="songinfo">
+            <img src="playing.gif" alt="1" width="42px" id="gif">let me love you-by justin bibber
+        </div>
     </div>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8d267caf5f.js" crossorigin="anonymous"></script>
 </body>
 </html>
